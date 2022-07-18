@@ -21,7 +21,7 @@ public class Logs {
     private Relances relanceLogs;
 
     @ManyToOne
-    private Contacts contact;
+    private Contacts contacts;
     private Status status;
     private String message;
     private Long createdBy;
