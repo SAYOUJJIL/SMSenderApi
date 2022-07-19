@@ -18,10 +18,12 @@ public class Logs {
     private Long idLog;
 
     @ManyToOne
+    @JoinColumn(name="idRelance")
     private Relances relanceLogs;
 
     @ManyToOne
-    private Contacts contact;
+    @JoinColumn(name="idContact")
+    private Contacts contacts;
     private Status status;
     private String message;
     private Long createdBy;

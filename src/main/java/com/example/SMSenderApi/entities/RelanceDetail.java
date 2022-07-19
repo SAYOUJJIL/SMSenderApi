@@ -13,6 +13,7 @@ public class RelanceDetail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idRelanceDetail;
     @ManyToOne
+    @JoinColumn(name="idRelance")
     private Relances relances;
     private String connexionString;
     private String script;
